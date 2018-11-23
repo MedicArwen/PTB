@@ -1,0 +1,18 @@
+h1
+{
+ text-shadow: 0 0 3px rgb(255, 204, 0);
+ font-size:20px;
+}
+	.panneau_nain img
+	{
+		display: none;
+	}
+  .class_affiche_pizza
+  {
+		width: 100%;
+
+		}
+.panier_pizza
+{
+  width:100%;
+}

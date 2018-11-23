@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<TITLE> Paye ta Pizza</TITLE>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css" >
+		<link rel="stylesheet" media="screen and (max-width: 1000px)" href="styleTablette.css" type="text/css" />
+		<link rel="stylesheet" media="screen and (max-width: 600px)" href="styleMobile.css" type="text/css" />
+		<link rel="stylesheet" media="screen and (max-width: 500px)" href="styleMobilePortrait.css" type="text/css" />
+
+		<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="UnePizza.js"></script>
+		<script type="text/javascript" src="PanierPizza.js"></script>
+		<script type="text/javascript" src="CataloguePizza.js"></script>
+	</HEAD>
+	<BODY>
+	<HEADER>
+	<img src="ressources_PTP/logo_marteau.png"  class="img_logo">
+
+	<h1>Paye Ton Marteau</h1>
+	</div>
+	</HEADER>
+	<MAIN>
+
+		<FORM>
+		<div class="panneau_info_client">
+		<div class="panneau_nain"><img src="ressources_PTP/Hammer_Dwarf.png"></div>
+		<div class="blabla_bulle">Alors, blanc-bec, faut se présenter un peu pour commander une Pizza Paye Ta Pizza!</div>
+		<DIV id="infos_client">
+			<FIELDSET>
+				<legend>Informations client</legend>
+				<label for="champ_nom">Nom </label><input type="text"id="champ_nom" name="champ_nom" placeholder="Saisissez votre nom"><BR>
+				<label for="champ_tel">Téléphone: </label><input type="text"id="champ_nom" name="champ_tel" placeholder="Votre numéro de mobile"><BR>
+
+				<legend>Mode de livraison</legend>
+				<input type="radio" value="non" name="choix_livraison" checked id="retrait_magasin" onclick="setVisibilite(0,'champ_adresse_livraison');"> <label for="retrait_magasin">Retrait au magasin</label>
+				<BR>
+				<input type="radio" value="oui" name="choix_livraison" id="retrait_livraison"  onclick="setVisibilite(1,'champ_adresse_livraison');" ><label for="retrait_livraison" > A domicile</label>
+				<br>Adresse de livraison:<BR><input type="text"id="champ_adresse_livraison" name="champ_adresse_livraison" placeholder="Votre adresse pour la livraison">
+				<legend>Mode de paiement</legend>
+				<input type="radio" value="oui" name="choix_paiement_en_ligne" checked id="paiement_ligne"><label for="paiement_ligne"> paiment en ligne</label>
+				<BR>
+					<input type="radio" value="non" name="choix_paiement_en_ligne"  id="paiement_reception"><label for="paiement_reception" >paiement sur place / a la livraison</label>
+			</FIELDSET>
+		</DIV>
+		</div>
+		<div>Choisissez vos PIZZAS</div>
+		<DIV class="selection_pizzas">
+
+			<DIV class="liste_pizza_a_commande" id="listpizzas">
+
+			</DIV>
+		<DIV class="panier_pizza">
+		Votre panier Pizza
+		<div class="panier_pizza_int" id="panier_pizza_liste">
+		<TABLE>
+			<TR>
+				<TH> intitule</TH><TH> quantite</TH><TH> PU</TH><TH> Prix total</TH>
+			</TR>
+			<div id="panier_pizza_table">
+			<TR >
+				<TD> Paye ta Pizza</TD><TD> 2</TD><TD> 9 balles</TD><TD> 18 balles</TD>
+			</TR>
+		</div>
+			<tr>
+				<TH> Total</TH><td>18 balles</td>
+			</tr>
+		</TABLE>
+</div>
+		</DIV>
+</DIV>
+		<DIV id="validation_commande" >
+		<input type= "button" value="Paye Ta Pizza!" onclick="refreshPanierPizza();">
+		</DIV>
+		</FORM>
+	</MAIN>
+	<FOOTER>
+	contact pizza fb
+	</FOOTER>
+<script type="text/javascript" src="ptmJQUERY.js"></script>
+	</BODY>
+</HTML>

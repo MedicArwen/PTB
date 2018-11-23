@@ -1,0 +1,37 @@
+.img_logo
+{
+	width: 128px;
+height: 128px;
+}
+.panier_pizza
+{
+	width:100%;
+	}
+  h1
+  {
+   text-shadow: 0 0 3px rgb(255, 204, 0);
+   font-size:40px;
+  }
+  .panneau_nain img
+  {
+  width: 60px;
+  height: 81px;
+  }
+  .panneau_nain
+  {
+  width: 60px ;
+  }
+  .blabla_bulle
+  {
+    visibility: hidden;
+    width: 0;
+    height:0;
+  }
+  .liste_pizza_a_commande
+  {
+    width: 100%;
+  }
+  .class_affiche_pizza {
+    width: 30%;
+
+    }
